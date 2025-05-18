@@ -1,3 +1,92 @@
+# 📰 Laravel Blog Application
+
+A full-featured **Blog Application** built with **Laravel** (PHP Framework).  
+It includes user authentication, blog creation with a rich text editor (CKEditor), image uploads, category-based navigation, and well-structured database relationships using Laravel Eloquent.
+
+---
+
+## 🚀 Tech Stack
+
+- **Framework:** Laravel (PHP)
+- **Frontend:** Blade Templates, Bootstrap
+- **Editor:** CKEditor for blog writing
+- **Database:** MySQL
+- **Authentication:** Laravel Breeze or Laravel UI (based on your setup)
+- **Image Handling:** Laravel File Storage + Multiple Image Uploads
+
+---
+
+## ✨ Features
+
+- ✅ User Registration & Login  
+- 📝 Create, Read, Update, Delete (CRUD) for blog posts  
+- 📸 Upload **multiple images** for each blog  
+- 🧠 CKEditor integration for rich text blog content  
+- 🧭 Customizable **Navbar with dynamic categories**  
+- 🔐 Authentication-protected dashboard  
+- 🔗 Well-managed **Eloquent Relationships** between tables  
+- 📱 Fully responsive layout using Bootstrap  
+
+---
+
+## 📁 Project Structure
+
+```bash
+Blog/
+├── app/ → Laravel controllers, models, etc.
+├── database/ → Migrations & seeders
+├── public/ → Public assets (uploaded images)
+├── resources/
+│ └── views/ → Blade templates
+├── routes/
+│ └── web.php → Web routes
+├── .env → Environment configuration
+└── composer.json
+```
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/VijayChaudhary2557/Blog.git
+cd Blog
+```
+
+### 2. Install Dependencies
+```bash
+composer install
+npm install && npm run dev
+```
+
+### 3. Configure Environment
+Rename .env.example to .env and update database credentials:
+```bash
+DB_DATABASE=your_db_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
+### 5. Run Migrations
+```bash
+php artisan migrate
+```
+### 6. Start the Development Server
+```bash
+php artisan serve
+```
+
+## 🧠 Database Design
+- Users ↔ Blogs: One-to-Many
+- Blogs ↔ Categories: Many-to-One
+- Blogs ↔ Images: One-to-Many (multiple image support)
+- Categories ↔ Blogs: One-to-Many
+
+## 📸 Screenshots
+
 ![Screenshot 2024-08-02 070928](https://github.com/user-attachments/assets/3d2b5f86-187c-4166-b598-1704d7931157)
 
 ![Screenshot 2024-08-02 070945](https://github.com/user-attachments/assets/b49bee10-2640-4bb8-9fbe-0a36db64074a)
