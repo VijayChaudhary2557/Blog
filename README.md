@@ -13,6 +13,7 @@ It includes user authentication, blog creation with a rich text editor (CKEditor
 - **Database:** MySQL
 - **Authentication:** Laravel Authentication System Use Auth
 - **Image Handling:** Laravel File Storage + Multiple Image Uploads
+- **Pagination:** Pagination
 
 ---
 
