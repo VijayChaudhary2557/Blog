@@ -11,7 +11,7 @@ It includes user authentication, blog creation with a rich text editor (CKEditor
 - **Frontend:** Blade Templates, Bootstrap
 - **Editor:** CKEditor for blog writing
 - **Database:** MySQL
-- **Authentication:** Laravel Breeze or Laravel UI (based on your setup)
+- **Authentication:** Laravel Authentication System Use Auth
 - **Image Handling:** Laravel File Storage + Multiple Image Uploads
 
 ---
